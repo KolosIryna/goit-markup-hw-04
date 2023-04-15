@@ -158,7 +158,7 @@ img {
   display: flex;
   gap: 40px;
 }
-/* Можна так задати або через gap
+/* Можна так задати
 .menu .item:not(:last-child) {
   margin-right: 40px;
 } */
@@ -194,9 +194,6 @@ img {
   display: flex;
   gap: 40px;
 }
-/* .address .item:not(:last-child) {
-  margin-right: 40px;
-} */
 
 .address .link {
   display: block;
@@ -294,9 +291,6 @@ img {
   border-radius: 4px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/hw-04/icons.svg#icon-antenna);
-}
 .section-heading {
   margin-bottom: 8px;
 
