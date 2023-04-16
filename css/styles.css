@@ -33,7 +33,8 @@
   /* Колір лініі в хедері cornflower */
   --cornflower: #e7e9fc;
   --light-slate: #8e8f99;
-
+  /* GREEN */
+  --green: #31d0aa;
   /**
     |============================
     | Others
@@ -408,11 +409,11 @@ img {
   gap: var(--indent);
 }
 
-.clisent-item {
+.client-item {
   width: calc((100% - (var(--indent) * (var(--items-c) - 1))) / var(--items-c));
 }
 
-.clisent-link {
+.client-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,15 +424,15 @@ img {
   border-radius: 4px;
 }
 
-.clisent-link:hover,
-.clisent-link:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--pressed-state-color);
 }
-.clisent-ikon {
+.client-ikon {
   fill: var(--light-slate);
 }
-.clisent-ikon:hover,
-.clisent-ikon:focus {
+.client-ikon:hover,
+.client-ikon:focus {
   fill: var(--pressed-state-color);
 }
 /**
@@ -488,7 +489,12 @@ img {
 .card-set-item {
   width: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
 }
-
+.card-set-item:hover,
+.card-set-item:focus {
+  border: 1px solid var(--bgr-cloud);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .card-content {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
@@ -505,13 +511,12 @@ img {
 
   background-color: var(--bgr-navy-blue);
 }
-.footer .container {
+
+.footer-soc-media {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
 }
-footer-list .footer-logo {
+
+.footer-logo {
   display: inline-block;
   margin-right: 0;
   padding: 0;
@@ -522,7 +527,27 @@ footer-list .footer-logo {
 
   color: var(--footer-text);
 }
-display: flex;
-justify-content: center;
-align-items: flex-start;
-flex-direction: column;
+
+.footer-social-media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  padding-left: 120px;
+}
+
+.footer-text-social {
+  padding-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--withe-text-color);
+}
+
+.social-link.soc-footer:hover,
+.social-link.soc-footer:focus {
+  background-color: var(--green);
+}
