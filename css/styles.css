@@ -367,7 +367,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .name-position {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .section-text-position {
@@ -424,6 +424,8 @@ img {
 
   border: 1px solid #8e8f99;
   border-radius: 4px;
+
+  color: в який записана css змінна зі значенням #8e8f99;
 }
 
 .client-link:hover,
@@ -432,6 +434,7 @@ img {
 }
 .client-ikon {
   fill: var(--light-slate);
+  /* fill: currentColor; */
 }
 .client-ikon:hover,
 .client-ikon:focus {
@@ -491,6 +494,7 @@ img {
 }
 
 .card-set-item {
+  display: block;
   width: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
 }
 .card-set-item:hover,
@@ -518,6 +522,8 @@ img {
 
 .footer-soc-media {
   display: flex;
+
+  align-items: baseline;
   gap: 120px;
 }
 
@@ -536,12 +542,11 @@ img {
 .footer-social-media {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-  align-items: baseline;
+  flex-direction: column;
 }
-/* .social-list.media-footer {
-   gap: 16px;
-} */
+.social-list.media-footer {
+  gap: 16px;
+}
 .footer-text-social {
   margin-bottom: 16px;
 
