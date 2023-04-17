@@ -425,6 +425,8 @@ img {
 
   border: 1px solid var(--light-slate);
   border-radius: 4px;
+
+  color: var(--light-slate);
 }
 
 .client-link:hover,
@@ -432,13 +434,9 @@ img {
   border-color: var(--pressed-state-color);
 }
 .client-ikon {
-  fill: var(--light-slate);
-  /* fill: currentColor; */
+  fill: currentColor;
 }
-.client-ikon:hover,
-.client-ikon:focus {
-  fill: var(--pressed-state-color);
-}
+
 /**
   |============================
   | Section portfolio.html
